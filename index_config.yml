@@ -5,4 +5,12 @@ plugins:
 title: [The title of your site]
 description: [A short description of your site's purpose]
 
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
 
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
+end
